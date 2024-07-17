@@ -42,7 +42,7 @@ set hlsearch
 set ruler
 
 " use the mouse in vim
-set mouse=a
+set mouse=r
 
 
 " Toggle the numbering or no numbering by pressing Ctrl-N-N
