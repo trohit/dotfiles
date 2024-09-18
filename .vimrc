@@ -64,5 +64,8 @@ set laststatus=2
 " for automatically indenting code
 filetype plugin indent on
 
-" auto add py shebang
-autocmd BufNewFile *.py 0r !echo "#!/usr/bin/env python3"
+" Automatically add Python shebang to new .py files
+autocmd BufNewFile *.py execute "normal i#!/usr/bin/env python3\n"
+autocmd BufNewFile *.py :setlocal filetype=python
+autocmd BufNewFile *.py :normal! G
+
